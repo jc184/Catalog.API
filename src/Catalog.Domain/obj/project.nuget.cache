@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ir71CuvfOzyaeS0mN2k1sV2sA4h5ghYMI53yPQvMWaYFfOss5WSDdU4JJBvuJ6JYdADtTJKqgSMKnyKJeRjcSQ==",
+  "dgSpecHash": "obTX8WMcZuT63YHMLPdNNFQr0/jEtUSg1Km1tIWWAqqmB+3nb4RAZ+tgyZAQU8OXtgUdnxsLng2ozUOA4A80mQ==",
   "success": true,
   "projectFilePath": "/home/chris/Catalog.API/src/Catalog.Domain/Catalog.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/chris/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/home/chris/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/chris/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

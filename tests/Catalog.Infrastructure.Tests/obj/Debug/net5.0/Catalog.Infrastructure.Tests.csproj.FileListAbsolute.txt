@@ -248,3 +248,6 @@
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.dll
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/ref/Catalog.Infrastructure.Tests.dll
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.genruntimeconfig.cache
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/AutoMapper.dll
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Fixtures.dll
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Fixtures.pdb

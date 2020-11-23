@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Euixqpk7m6sj59t6YNAag8sDEYHNWJHibM6C4ES68QKbOa9Yi6DKEkJ8Fi5YXAH8WlSfaIJTy2P88Popcs9Y3Q==",
+  "dgSpecHash": "f5Mx3Vwk0t2TwFBUItWaRbDBsQPI7Rop5C8t1FHxs3M9ewIP1LtCh36+P2F9swz041oSjR2XxoRGlijVR1agBA==",
   "success": true,
   "projectFilePath": "/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj",
   "expectedPackageFiles": [
+    "/home/chris/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/home/chris/.nuget/packages/coverlet.collector/1.3.0/coverlet.collector.1.3.0.nupkg.sha512",
     "/home/chris/.nuget/packages/diffengine/6.4.2/diffengine.6.4.2.nupkg.sha512",
     "/home/chris/.nuget/packages/emptyfiles/2.3.1/emptyfiles.2.3.1.nupkg.sha512",

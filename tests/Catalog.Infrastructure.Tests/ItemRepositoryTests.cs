@@ -2,108 +2,100 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Catalog.Domain.Entities;
+using Catalog.Fixtures;
 using Catalog.Infrastructure.Repositories;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using Shouldly;
 using Xunit;
 
 namespace Catalog.Infrastructure.Tests
 {
-    public class ItemRepositoryTests
+    public class ItemRepositoryTests : IClassFixture<CatalogContextFactory>
     {
+        private readonly ItemRepository _sut;
+        private readonly TestCatalogContext _context;
+
+        public ItemRepositoryTests(CatalogContextFactory catalogContextFactory)
+        {
+            _context = catalogContextFactory.ContextInstance;
+            _sut = new ItemRepository(_context);
+        }
+
         [Fact]
         public async Task should_get_data()
         {
-            var options = new DbContextOptionsBuilder<CatalogContext>()
-                .UseInMemoryDatabase(databaseName: "should_get_data")
-                .Options;
-
-            await using var context = new TestCatalogContext(options);
-            context.Database.EnsureCreated();
-
-            var sut = new ItemRepository(context);
-            var result = await sut.GetAsync();
+            var result = await _sut.GetAsync();
             result.ShouldNotBeNull();
         }
 
         [Fact]
         public async Task should_returns_null_with_id_not_present()
         {
-            var options = new DbContextOptionsBuilder<CatalogContext>()
-                .UseInMemoryDatabase(databaseName: "should_returns_null_with_id_not_present")
-                .Options;
-
-            await using var context = new TestCatalogContext(options);
-            context.Database.EnsureCreated();
-
-            var sut = new ItemRepository(context);
-            var result = await sut.GetAsync(Guid.NewGuid());
+            var result = await _sut.GetAsync(Guid.NewGuid());
             result.ShouldBeNull();
         }
-
 
         [Theory]
         [InlineData("b5b05534-9263-448c-a69e-0bbd8b3eb90e")]
         public async Task should_return_record_by_id(string guid)
         {
-            var options = new DbContextOptionsBuilder<CatalogContext>()
-                .UseInMemoryDatabase(databaseName: "should_return_record_by_id")
-                .Options;
-
-            await using var context = new TestCatalogContext(options);
-            context.Database.EnsureCreated();
-
-            var sut = new ItemRepository(context);
-            var result = await sut.GetAsync(new Guid(guid));
+            var result = await _sut.GetAsync(new Guid(guid));
             result.Id.ShouldBe(new Guid(guid));
         }
 
-        [Theory]
-        [InlineData(
-            "{ \"Id\": \"b5b05534-9263-448c-a56e-0bbd8b3eb90e\", \"Name\": \"Test album\", \"Description\": \"Description\", \"LabelName\": \"LabelName\", \"Price\": { \"Amount\": 23.5, \"Currency\": \"EUR\" }, \"PictureUri\": \"https://mycdn.com/pictures/32423423\", \"ReleaseDate\": \"2016-01-01T00:00:00+00:00\", \"Format\": \"Vinyl 33g\", \"AvailableStock\": 6, \"GenreId\": \"c04f05c0-f6ad-44d1-a400-3375bfb5dfd6\", \"Genre\": null, \"ArtistId\": \"f08a333d-30db-4dd1-b8ba-3b0473c7cdab\", \"Artist\": null }")]
-        public async Task should_add_new_item(string jsonEntity)
+        [Fact]
+        public async Task should_add_new_item()
         {
-            var entity = JsonConvert.DeserializeObject<Item>(jsonEntity);
+            var testItem = new Item
+            {
+                Name = "Test album",
+                Description = "Description",
+                LabelName = "Label name",
+                Price = new Price { Amount = 13, Currency = "EUR" },
+                PictureUrl = "https://mycdn.com/pictures/32423423",
+                ReleaseDate = DateTimeOffset.Now,
+                Format = "Vinyl 33g",
+                AvailableStock = 6,
+                GenreId = new Guid("c04f05c0-f6ad-44d1-a400-3375bfb5dfd6"),
+                ArtistId = new Guid("f08a333d-30db-4dd1-b8ba-3b0473c7cdab")
+            };
 
-            var options = new DbContextOptionsBuilder<CatalogContext>()
-                .UseInMemoryDatabase(databaseName: "should_add_new_items")
-                .Options;
 
-            await using var context = new TestCatalogContext(options);
-            context.Database.EnsureCreated();
+            _sut.Add(testItem);
+            await _sut.UnitOfWork.SaveEntitiesAsync();
 
-            var sut = new ItemRepository(context);
-            sut.Add(entity);
-
-            await sut.UnitOfWork.SaveEntitiesAsync();
-
-            context.Items
-                .FirstOrDefault(x => x.Id == entity.Id)
+            _context.Items
+                .FirstOrDefault(item => item.Id == testItem.Id)
                 .ShouldNotBeNull();
         }
 
-        [Theory]
-        [InlineData(
-            "{ \"Id\": \"b5b05534-9263-448c-a69e-0bbd8b3eb90e\", \"Name\": \"GOOD KID, m.A.A.d CITY\", \"Description\": \"GOOD KID, m.A.A.d CITY. by Kendrick Lamar\", \"LabelName\": \"TDE, Top Dawg Entertainment\", \"Price\": { \"Amount\": 23.5, \"Currency\": \"EUR\" }, \"PictureUri\": \"https://mycdn.com/pictures/32423423\", \"ReleaseDate\": \"2016-01-01T00:00:00+00:00\", \"Format\": \"Vinyl 33g\", \"AvailableStock\": 6, \"GenreId\": \"c04f05c0-f6ad-44d1-a400-3375bfb5dfd6\", \"Genre\": null, \"ArtistId\": \"f08a333d-30db-4dd1-b8ba-3b0473c7cdab\", \"Artist\": null }")]
-        public async Task should_update_item(string jsonEntity)
+        [Fact]
+        public async Task should_update_item()
         {
-            var entity = JsonConvert.DeserializeObject<Item>(jsonEntity);
-            entity.Description = "Updated";
+            var testItem = new Item
+            {
+                Id = new Guid("f5da5ce4-091e-492e-a70a-22b073d75a52"),
+                Name = "Test album",
+                Description = "Description updated",
+                LabelName = "Label name",
+                Price = new Price { Amount = 50, Currency = "EUR" },
+                PictureUrl = "https://mycdn.com/pictures/32423423",
+                ReleaseDate = DateTimeOffset.Now,
+                Format = "Vinyl 33g",
+                AvailableStock = 6,
+                GenreId = new Guid("c04f05c0-f6ad-44d1-a400-3375bfb5dfd6"),
+                ArtistId = new Guid("f08a333d-30db-4dd1-b8ba-3b0473c7cdab")
+            };
 
-            var options = new DbContextOptionsBuilder<CatalogContext>()
-                .UseInMemoryDatabase(databaseName: "should_update_item")
-                .Options;
 
-            await using var context = new TestCatalogContext(options);
-            context.Database.EnsureCreated();
-            var sut = new ItemRepository(context);
+            _sut.Update(testItem);
 
-            sut.Update(entity);
-            await sut.UnitOfWork.SaveEntitiesAsync();
-            context.Items
-                .FirstOrDefault(x => x.Id == entity.Id)
-                ?.Description.ShouldBe("Updated");
+            await _sut.UnitOfWork.SaveEntitiesAsync();
+
+            var result = _context.Items
+                .FirstOrDefault(item => item.Id == testItem.Id);
+
+            result.Description.ShouldBe("Description updated");
+            result.Price.Amount.ShouldBe(50);
         }
     }
 }

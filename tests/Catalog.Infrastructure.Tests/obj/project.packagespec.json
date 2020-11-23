@@ -20,6 +20,9 @@
         "projectReferences": {
           "/home/chris/Catalog.API/src/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
             "projectPath": "/home/chris/Catalog.API/src/Catalog.Infrastructure/Catalog.Infrastructure.csproj"
+          },
+          "/home/chris/Catalog.API/tests/Catalog.Fixtures/Catalog.Fixtures.csproj": {
+            "projectPath": "/home/chris/Catalog.API/tests/Catalog.Fixtures/Catalog.Fixtures.csproj"
           }
         }
       }

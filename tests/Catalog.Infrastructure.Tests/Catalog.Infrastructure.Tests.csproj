@@ -23,17 +23,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Data\artist.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\genre.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\item.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\..\src\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\Catalog.Fixtures\Catalog.Fixtures.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+    <Folder Include="Data" />
+    <Folder Include="Extensions" />
   </ItemGroup>
 </Project>
