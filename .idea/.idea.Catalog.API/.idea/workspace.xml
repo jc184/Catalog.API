@@ -5,7 +5,7 @@
     <projectFile>tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f226c03-f0ca-4389-9019-a457012a7495" name="Default Changelist" comment="" />
+    <list default="true" id="8f226c03-f0ca-4389-9019-a457012a7495" name="Default Changelist" comment="First Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +18,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Catalog.Infrastructure/CatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Catalog.Infrastructure/Repositories/ItemRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,6 +61,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1keHNHXaN5K11BvJEy1H4KBMXpw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,6 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -136,7 +142,16 @@
       <workItem from="1606059238854" duration="10291000" />
       <workItem from="1606083243412" duration="5790000" />
       <workItem from="1606091500361" duration="287000" />
+      <workItem from="1606093811957" duration="429000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1606094049309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606094049309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,8 +159,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="753" y="295" width="471" height="514" key="FileChooserDialogImpl" timestamp="1606093845977">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="753" y="295" width="471" height="514" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1606093845977" />
     <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1606089371009">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -162,5 +183,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1606089371009" />
+    <state x="798" y="464" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606094242281">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="798" y="464" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606094242281" />
   </component>
 </project>
