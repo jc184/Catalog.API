@@ -5,6 +5,7 @@
     <projectFile>tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj</projectFile>
     <projectFile>tests/Catalog.Fixtures/Catalog.Fixtures.csproj</projectFile>
     <projectFile>tests/Catalog.Domain.Tests/Catalog.Domain.Tests.csproj</projectFile>
+    <projectFile>tests/Catalog.API.Tests/Catalog.API.Tests.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -26,40 +27,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f226c03-f0ca-4389-9019-a457012a7495" name="Default Changelist" comment="CH09 First commit">
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Extensions/DependenciesRegistration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/AddItemRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/EditItemRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Requests/Item/Validators/AddItemRequestsValidatorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Catalog.API/Controllers/ItemController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Catalog.API.Tests/Catalog.API.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Catalog.API.Tests/UnitTest1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/InMemoryWebApplicationFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Catalog.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Catalog.API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Catalog.API.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Catalog.API.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Catalog.API/Catalog.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/Catalog.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Catalog.Fixtures/Catalog.Fixtures.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Catalog.Fixtures.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Catalog.Infrastructure.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Catalog.Infrastructure.Tests.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,8 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Catalog.Infrastucture/ItemRepository.cs" />
-        <option value="$PROJECT_DIR$/src/Catalog.Infrastucture/Repositories/ItemRepository.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastructure/Repositories/ItemRepository.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Domain/Entities/Artist.cs" />
@@ -138,6 +119,8 @@
         <option value="$PROJECT_DIR$/src/Catalog.Domain/Extensions/DependenciesRegistration.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" />
         <option value="$PROJECT_DIR$/src/Catalog.API/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/Catalog.API/Controllers/ItemController.cs" />
+        <option value="$PROJECT_DIR$/tests/Catalog.Fixtures/InMemoryWebApplicationFactory.cs" />
       </list>
     </option>
   </component>
@@ -164,6 +147,24 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Catalog.API">
+    <configuration name="Catalog.API.Tests" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/tests/Catalog.API.Tests/Catalog.API.Tests.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Catalog.Domain.Tests" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -265,7 +266,8 @@
       <workItem from="1606093811957" duration="2449000" />
       <workItem from="1606107901503" duration="2095000" />
       <workItem from="1606141814580" duration="13782000" />
-      <workItem from="1606163148112" duration="2932000" />
+      <workItem from="1606163148112" duration="3400000" />
+      <workItem from="1606168879371" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1606094049309</created>
@@ -295,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606157664847</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CH09 Second Commit">
+      <created>1606166289818</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606166289818</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +329,8 @@
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Third Commit" />
     <MESSAGE value="CH09 First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="CH09 First commit" />
+    <MESSAGE value="CH09 Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="CH09 Second Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="295" width="471" height="514" key="FileChooserDialogImpl" timestamp="1606093845977">
@@ -351,14 +361,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="835" y="465" width="307" height="174" key="VCS.ChangelistChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1606152172279" />
-    <state x="167" y="127" width="1653" height="855" key="VCS.FileHistoryDialog" timestamp="1606108792509">
+    <state x="167" y="127" width="1653" height="855" key="VCS.FileHistoryDialog" timestamp="1606166594505">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="167" y="127" width="1653" height="855" key="VCS.FileHistoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606108792509" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606157709246">
+    <state x="167" y="127" width="1653" height="855" key="VCS.FileHistoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606166594505" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606166310536">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1606157709246" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1606166310536" />
     <state x="798" y="464" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606094242281">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
