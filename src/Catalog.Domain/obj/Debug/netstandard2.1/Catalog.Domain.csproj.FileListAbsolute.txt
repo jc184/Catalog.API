@@ -1,0 +1,9 @@
+/home/chris/Catalog.API/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.deps.json
+/home/chris/Catalog.API/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.dll
+/home/chris/Catalog.API/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.pdb
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csprojAssemblyReference.cache
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.AssemblyInfoInputs.cache
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.AssemblyInfo.cs
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csproj.CoreCompileInputs.cache
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.dll
+/home/chris/Catalog.API/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.pdb

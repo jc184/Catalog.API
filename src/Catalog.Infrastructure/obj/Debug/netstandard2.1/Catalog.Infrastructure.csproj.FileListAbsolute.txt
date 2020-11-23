@@ -1,0 +1,12 @@
+/home/chris/Catalog.API/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.deps.json
+/home/chris/Catalog.API/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.dll
+/home/chris/Catalog.API/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.pdb
+/home/chris/Catalog.API/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.dll
+/home/chris/Catalog.API/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.pdb
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csprojAssemblyReference.cache
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.AssemblyInfoInputs.cache
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.AssemblyInfo.cs
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csproj.CoreCompileInputs.cache
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csproj.CopyComplete
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.dll
+/home/chris/Catalog.API/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.pdb
