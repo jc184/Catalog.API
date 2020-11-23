@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "f5Mx3Vwk0t2TwFBUItWaRbDBsQPI7Rop5C8t1FHxs3M9ewIP1LtCh36+P2F9swz041oSjR2XxoRGlijVR1agBA==",
+  "dgSpecHash": "wY/PqVZkr7rSCxCEcuMhP19LVf53F77QafRH5vRSf22IQLcnFkE4bnAEtMLJAnAATyIuUYFTq2z8NeGmocwrWQ==",
   "success": true,
   "projectFilePath": "/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj",
   "expectedPackageFiles": [
-    "/home/chris/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/home/chris/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/home/chris/.nuget/packages/coverlet.collector/1.3.0/coverlet.collector.1.3.0.nupkg.sha512",
     "/home/chris/.nuget/packages/diffengine/6.4.2/diffengine.6.4.2.nupkg.sha512",
     "/home/chris/.nuget/packages/emptyfiles/2.3.1/emptyfiles.2.3.1.nupkg.sha512",
+    "/home/chris/.nuget/packages/fluentvalidation/8.5.1/fluentvalidation.8.5.1.nupkg.sha512",
+    "/home/chris/.nuget/packages/fluentvalidation.aspnetcore/8.5.1/fluentvalidation.aspnetcore.8.5.1.nupkg.sha512",
+    "/home/chris/.nuget/packages/fluentvalidation.dependencyinjectionextensions/8.5.1/fluentvalidation.dependencyinjectionextensions.8.5.1.nupkg.sha512",
     "/home/chris/.nuget/packages/microsoft.codecoverage/16.7.1/microsoft.codecoverage.16.7.1.nupkg.sha512",
     "/home/chris/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/chris/.nuget/packages/microsoft.data.sqlclient/2.0.1/microsoft.data.sqlclient.2.0.1.nupkg.sha512",

@@ -25,32 +25,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f226c03-f0ca-4389-9019-a457012a7495" name="Default Changelist" comment="Third Commit">
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/ArtistMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/GenreMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/IArtistMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/IGenreMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/IItemMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Mappers/ItemMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/AddItemRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/DeleteItemRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/EditItemRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/GetItemRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Responses/Item/ArtistResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Responses/Item/GenreResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Responses/Item/ItemResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Responses/Item/PriceResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Services/IItemService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Services/ItemService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Catalog.Domain.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Services/ItemServiceTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Catalog.Fixtures.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/CatalogContextFactory.cs" afterDir="false" />
+    <list default="true" id="8f226c03-f0ca-4389-9019-a457012a7495" name="Default Changelist" comment="CH09 First commit">
+      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Extensions/DependenciesRegistration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/AddItemRequestValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/EditItemRequestValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Requests/Item/Validators/AddItemRequestsValidatorTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catalog.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catalog.API/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catalog.API/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Catalog.API.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Catalog.API.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Catalog.API.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Catalog.API.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Catalog.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Catalog.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Catalog.API.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/Debug/net5.0/Catalog.API.csprojAssemblyReference.cache" afterDir="false" />
@@ -58,53 +40,23 @@
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/bin/Debug/netstandard2.1/Catalog.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Catalog.Domain.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/Debug/netstandard2.1/Catalog.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/bin/Debug/netstandard2.1/Catalog.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Catalog.Infrastructure.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/Debug/netstandard2.1/Catalog.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Data/artist.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Data/artist.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Data/genre.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Data/genre.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Data/item.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Data/item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/ItemRepositoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/ItemRepositoryTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/TestCatalogContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Fixtures/TestCatalogContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.Tests.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Catalog.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/ref/Catalog.Infrastructure.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/ref/Catalog.Infrastructure.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Catalog.Infrastructure.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Catalog.Infrastructure.Tests.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/Catalog.Infrastructure.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/ref/Catalog.Infrastructure.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/Debug/net5.0/ref/Catalog.Infrastructure.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/obj/project.packagespec.json" afterDir="false" />
@@ -135,11 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Catalog.Domain/Repositories/IUnitOfWork.cs" />
-        <option value="$PROJECT_DIR$/src/Catalog.Domain/Repositories/IRepository.cs" />
-        <option value="$PROJECT_DIR$/src/Catalog.Domain/Repositories/IItemRepository.cs" />
-        <option value="$PROJECT_DIR$/src/Catalog.Infrastucture/CatalogContext.cs" />
-        <option value="$PROJECT_DIR$/src/Catalog.Domain/Repositories/ItemRepository.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastucture/ItemRepository.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastucture/Repositories/ItemRepository.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
@@ -151,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/Catalog.Infrastructure/SchemaDefinitions/GenreEntitySchemaConfiguration.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.Infrastructure/CatalogContext.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.API/appsettings.json" />
-        <option value="$PROJECT_DIR$/src/Catalog.API/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Catalog.API/Extensions/DatabaseExtensions.cs" />
         <option value="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Data/item.json" />
         <option value="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/Catalog.Infrastructure.Tests.csproj" />
@@ -186,6 +132,12 @@
         <option value="$PROJECT_DIR$/tests/Catalog.Infrastructure.Tests/ItemRepositoryTests.cs" />
         <option value="$PROJECT_DIR$/tests/Catalog.Domain.Tests/ItemServiceTests.cs" />
         <option value="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Services/ItemServiceTests.cs" />
+        <option value="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/AddItemRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/src/Catalog.Domain/Requests/Item/Validators/EditItemRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/tests/Catalog.Domain.Tests/Requests/Item/Validators/AddItemRequestsValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/src/Catalog.Domain/Extensions/DependenciesRegistration.cs" />
+        <option value="$PROJECT_DIR$/src/Catalog.Domain/Catalog.Domain.csproj" />
+        <option value="$PROJECT_DIR$/src/Catalog.API/Startup.cs" />
       </list>
     </option>
   </component>
@@ -312,7 +264,8 @@
       <workItem from="1606091500361" duration="287000" />
       <workItem from="1606093811957" duration="2449000" />
       <workItem from="1606107901503" duration="2095000" />
-      <workItem from="1606141814580" duration="12439000" />
+      <workItem from="1606141814580" duration="13782000" />
+      <workItem from="1606163148112" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1606094049309</created>
@@ -335,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606096196663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CH09 First commit">
+      <created>1606157664847</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606157664847</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +319,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Third Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third Commit" />
+    <MESSAGE value="CH09 First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="CH09 First commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="295" width="471" height="514" key="FileChooserDialogImpl" timestamp="1606093845977">
@@ -394,10 +355,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="167" y="127" width="1653" height="855" key="VCS.FileHistoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606108792509" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606096218169">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606157709246">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1606096218169" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1606157709246" />
     <state x="798" y="464" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606094242281">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
