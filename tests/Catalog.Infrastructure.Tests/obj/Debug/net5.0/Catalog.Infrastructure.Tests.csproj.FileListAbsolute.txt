@@ -232,3 +232,6 @@
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/FluentValidation.dll
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/FluentValidation.AspNetCore.dll
 /home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Testing.dll
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Microsoft.AspNetCore.TestHost.dll
+/home/chris/Catalog.API/tests/Catalog.Infrastructure.Tests/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll

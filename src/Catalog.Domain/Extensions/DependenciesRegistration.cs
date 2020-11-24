@@ -1,5 +1,4 @@
 using System.Reflection;
-using AutoMapper;
 using Catalog.Domain.Mappers;
 using Catalog.Domain.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,7 +21,9 @@ namespace Catalog.Domain.Extensions
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services
-                .AddScoped<IItemService, ItemService>();
+                .AddScoped<IItemService, ItemService>()
+                .AddScoped<IArtistService, ArtistService>()
+                .AddScoped<IGenreService, GenreService>();
             return services;
         }
 

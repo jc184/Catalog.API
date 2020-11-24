@@ -1,7 +1,11 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
+using Catalog.API.Filters;
 using Catalog.Domain.Requests.Item;
+using Catalog.Domain.Responses.Item;
 using Catalog.Domain.Services;
+using Catalog.API.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog.API.Controllers
@@ -18,13 +22,23 @@ namespace Catalog.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int pageSize = 10, int pageIndex = 0)
         {
             var result = await _itemService.GetItemsAsync();
-            return Ok(result);
+
+            var totalItems = result.Count();
+
+            var itemsOnPage = result
+                .OrderBy(c => c.Name)
+                .Skip(pageSize * pageIndex)
+                .Take(pageSize);
+
+            var model = new PaginatedItemResponseModel<ItemResponse>(pageIndex, pageSize, totalItems, itemsOnPage);
+            return Ok(model);
         }
         
         [HttpGet("{id:guid}")]
+        [ItemExists]
         public async Task<IActionResult> GetById(Guid id)
         {
             var result = await _itemService.GetItemAsync(new GetItemRequest
@@ -42,6 +56,7 @@ namespace Catalog.API.Controllers
         }
 
         [HttpPut("{id:guid}")]
+        [ItemExists]
         public async Task<IActionResult> Put(Guid id, EditItemRequest request)
         {
             request.Id = id;

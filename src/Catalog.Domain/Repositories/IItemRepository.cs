@@ -9,7 +9,11 @@ namespace Catalog.Domain.Repositories
     {
         Task<IEnumerable<Item>> GetAsync();
 
-        Task<Item> GetAsync(Guid Id);
+        Task<Item> GetAsync(Guid id);
+
+        Task<IEnumerable<Item>> GetItemByArtistIdAsync(Guid id);
+        
+        Task<IEnumerable<Item>> GetItemByGenreIdAsync(Guid id);
 
         Item Add(Item item);
 

@@ -22,10 +22,19 @@
         <e p="Catalog.API" t="IncludeRecursive">
           <e p="Catalog.API.csproj" t="IncludeRecursive" />
           <e p="Controllers" t="Include">
+            <e p="ArtistController.cs" t="Include" />
+            <e p="GenreController.cs" t="Include" />
             <e p="ItemController.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="JsonErrorPayload.cs" t="Include" />
           </e>
           <e p="Extensions" t="Include">
             <e p="DatabaseExtensions.cs" t="Include" />
+          </e>
+          <e p="Filters" t="Include">
+            <e p="ItemExistsAttribute.cs" t="Include" />
+            <e p="JsonExceptionAttribute.cs" t="Include" />
           </e>
           <e p="Migrations" t="Include">
             <e p="20201122165634_InitMigration.Designer.cs" t="Include" />
@@ -35,6 +44,9 @@
           <e p="Program.cs" t="Include" />
           <e p="Properties" t="Include">
             <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="ResponseModels" t="Include">
+            <e p="PaginatedItemsResponseModel.cs" t="Include" />
           </e>
           <e p="Startup.cs" t="Include" />
           <e p="appsettings.Development.json" t="Include" />
@@ -68,11 +80,21 @@
             <e p="ItemMapper.cs" t="Include" />
           </e>
           <e p="Repositories" t="Include">
+            <e p="IArtistRepository.cs" t="Include" />
+            <e p="IGenreRepository.cs" t="Include" />
             <e p="IItemRepository.cs" t="Include" />
             <e p="IRepository.cs" t="Include" />
             <e p="IUnitOfWork.cs" t="Include" />
           </e>
           <e p="Requests" t="Include">
+            <e p="Artists" t="Include">
+              <e p="AddArtistRequest.cs" t="Include" />
+              <e p="GetArtistRequest.cs" t="Include" />
+            </e>
+            <e p="Genre" t="Include">
+              <e p="AddGenreRequest.cs" t="Include" />
+              <e p="GetGenreRequest.cs" t="Include" />
+            </e>
             <e p="Item" t="Include">
               <e p="AddItemRequest.cs" t="Include" />
               <e p="DeleteItemRequest.cs" t="Include" />
@@ -93,6 +115,10 @@
             </e>
           </e>
           <e p="Services" t="Include">
+            <e p="ArtistService.cs" t="Include" />
+            <e p="GenreService.cs" t="Include" />
+            <e p="IArtistService.cs" t="Include" />
+            <e p="IGenreService.cs" t="Include" />
             <e p="IItemService.cs" t="Include" />
             <e p="ItemService.cs" t="Include" />
           </e>
@@ -109,6 +135,8 @@
           <e p="Catalog.Infrastructure.csproj" t="IncludeRecursive" />
           <e p="CatalogContext.cs" t="Include" />
           <e p="Repositories" t="Include">
+            <e p="ArtistRepository.cs" t="Include" />
+            <e p="GenreRepository.cs" t="Include" />
             <e p="ItemRepository.cs" t="Include" />
           </e>
           <e p="SchemaDefinitions" t="Include">
@@ -129,7 +157,14 @@
       <e p="tests" t="Include">
         <e p="Catalog.API.Tests" t="IncludeRecursive">
           <e p="Catalog.API.Tests.csproj" t="IncludeRecursive" />
-          <e p="UnitTest1.cs" t="Include" />
+          <e p="Controllers" t="Include">
+            <e p="ArtistControllerTests.cs" t="Include" />
+            <e p="GenreControllerTests.cs" t="Include" />
+            <e p="ItemControllerTests.cs" t="Include" />
+          </e>
+          <e p="Filters" t="Include">
+            <e p="ItemExistsAttributeTests.cs" t="Include" />
+          </e>
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -138,6 +173,7 @@
               </e>
             </e>
           </e>
+          <e p="record-data.json" t="Include" />
         </e>
         <e p="Catalog.Domain.Tests" t="IncludeRecursive">
           <e p="Catalog.Domain.Tests.csproj" t="IncludeRecursive" />
@@ -172,6 +208,7 @@
             <e p="ModelBuilderExtensions.cs" t="Include" />
           </e>
           <e p="InMemoryWebApplicationFactory.cs" t="Include" />
+          <e p="LoadDataAttribute.cs" t="Include" />
           <e p="TestCatalogContext.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
@@ -183,9 +220,11 @@
           </e>
         </e>
         <e p="Catalog.Infrastructure.Tests" t="IncludeRecursive">
+          <e p="ArtistRepositoryTests.cs" t="Include" />
           <e p="Catalog.Infrastructure.Tests.csproj" t="IncludeRecursive" />
           <e p="Data" t="Include" />
           <e p="Extensions" t="Include" />
+          <e p="GenreRepositoryTests.cs" t="Include" />
           <e p="ItemRepositoryTests.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">

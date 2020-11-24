@@ -37,6 +37,30 @@ namespace Catalog.Infrastructure.Repositories
             return item;
         }
 
+        public async Task<IEnumerable<Item>> GetItemByArtistIdAsync(Guid id)
+        {
+            var items = await _context
+                .Items
+                .Where(item => item.ArtistId == id)
+                .Include(x => x.Genre)
+                .Include(x => x.Artist)
+                .ToListAsync();
+
+            return items;
+        }
+
+        public async Task<IEnumerable<Item>> GetItemByGenreIdAsync(Guid id)
+        {
+            var items = await _context
+                .Items
+                .Where(item => item.GenreId == id)
+                .Include(x => x.Genre)
+                .Include(x => x.Artist)
+                .ToListAsync();
+
+            return items;
+        }
+
         public Item Add(Item order)
         {
             return _context.Items

@@ -1,21 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Catalog.API.Extensions;
 using Catalog.Domain.Extensions;
 using Catalog.Domain.Repositories;
+using Catalog.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using Catalog.Infrastructure;
 using Catalog.Infrastructure.Repositories;
 
 namespace Catalog.API
@@ -34,7 +26,10 @@ namespace Catalog.API
         {
             services.AddCatalogContext(Configuration.GetSection("DataSource:ConnectionString").Value)
                 .AddScoped<IItemRepository, ItemRepository>()
+                .AddScoped<IArtistRepository, ArtistRepository>()
+                .AddScoped<IGenreRepository, GenreRepository>()
                 .AddMappers()
+                .AddServices()
                 .AddControllers()
                 .AddValidation();
             services.AddEntityFrameworkSqlServer();

@@ -321,6 +321,65 @@
           "Catalog.API.dll": {}
         }
       },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "FluentValidation/8.5.1": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/8.5.1": {
+        "dependencies": {
+          "FluentValidation": "8.5.1",
+          "FluentValidation.DependencyInjectionExtensions": "8.5.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/8.5.1": {
+        "dependencies": {
+          "FluentValidation": "8.5.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -1287,6 +1346,11 @@
         }
       },
       "Catalog.Domain/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "FluentValidation": "8.5.1",
+          "FluentValidation.AspNetCore": "8.5.1"
+        },
         "runtime": {
           "Catalog.Domain.dll": {}
         },
@@ -3012,6 +3076,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
+    "FluentValidation/8.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GoygZcMkCcve3UHZM3ITSzgrPdfjPSl5mRSQKL6BlV8aI0yi+shIAju7k6QirPESNGsKzn+r4ne0JmqsAGG/PA==",
+      "path": "fluentvalidation/8.5.1",
+      "hashPath": "fluentvalidation.8.5.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/8.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A4TuLESOonzu7oGDdkZUtUBqYxiR6M9r7UiK5yqIad2bYGcLrWRV8OshpumTj4g8tT/rvF3fpexCbPBLRmX3gw==",
+      "path": "fluentvalidation.aspnetcore/8.5.1",
+      "hashPath": "fluentvalidation.aspnetcore.8.5.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/8.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-93QjECbdNc4LkTutV4/uvFkj6IpqRb81PLkfUWEnsDYflrJVqqKdiMXNPiS+Ja3WM5IH/u+J0k1T+WP1DWKmsQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/8.5.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.8.5.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
