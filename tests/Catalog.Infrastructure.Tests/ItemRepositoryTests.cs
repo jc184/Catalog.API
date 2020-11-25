@@ -41,6 +41,14 @@ namespace Catalog.Infrastructure.Tests
             var result = await _sut.GetAsync(new Guid(guid));
             result.Id.ShouldBe(new Guid(guid));
         }
+        
+        [Theory]
+        [InlineData("f5da5ce4-091e-492e-a70a-22b073d75a52")]
+        public async Task getitems_should_not_return_inactive_records(string id)
+        {
+            var result = await _sut.GetAsync();
+            result.Any(x => x.Id == new Guid(id)).ShouldBeFalse();
+        }
 
         [Fact]
         public async Task should_add_new_item()

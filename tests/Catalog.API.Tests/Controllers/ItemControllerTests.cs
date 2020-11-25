@@ -123,5 +123,28 @@ namespace Catalog.API.Tests.Controllers
             responseEntity.GenreId.ShouldBe(request.GenreId);
             responseEntity.ArtistId.ShouldBe(request.ArtistId);
         }
+        
+        [Theory]
+        [LoadData("item")]
+        public async Task delete_should_return_no_content_when_called_with_right_id(DeleteItemRequest request)
+        {
+            var client = _factory.CreateClient();
+            
+            var response = await client.DeleteAsync($"/api/items/{request.Id}");
+
+            response.StatusCode.ShouldBe(HttpStatusCode.NoContent);
+            
+        }
+        
+        [Fact]
+        public async Task delete_should_return_not_found_when_called_with_non_existing_id()
+        {
+            var client = _factory.CreateClient();
+            
+            var response = await client.DeleteAsync($"/api/items/{Guid.NewGuid()}");
+
+            response.StatusCode.ShouldBe(HttpStatusCode.NotFound);
+            
+        }
     }
 }

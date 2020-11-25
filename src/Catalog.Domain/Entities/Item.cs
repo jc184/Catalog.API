@@ -17,5 +17,7 @@ namespace Catalog.Domain.Entities
         public Genre Genre { get; set; }
         public Guid ArtistId { get; set; }
         public Artist Artist { get; set; }
+        
+        public bool IsInactive { get; set; }
     }
 }
